@@ -1,0 +1,113 @@
+.bookContainer {
+    width: 100vw;
+    min-width: 500px;
+    height: 100%;
+
+    margin: auto;
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainContainer {
+    width: 65vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #00a2ff;
+    font-family: 'PT Serif', serif;
+}
+
+.img {
+    min-width: 300px;
+    width: 200px;
+}
+
+.bookPageInformationContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 40vw;
+    min-height: 300px;
+    padding: 15px;
+}
+
+.bookPageInformationContainer h2,
+.bookPageInformationContainer h5,
+.bookPageInformationContainer h6,
+.bookPageInformationContainer a,
+.bookPageInformationContainer p,
+.bookPageInformationContainer button {
+    font-size: clamp(12px, 2vw, 16px);
+    margin: 10px;
+}
+
+.bookPageInformationContainer p {
+    border: 1px solid #00a2ff;
+    ;
+    padding: 10px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.bookPageInformationContainer a {
+    color: rgb(87, 87, 87);
+    text-align: right;
+    text-decoration: none;
+}
+
+.bookPageInformationContainer a:hover {
+    color: rgb(38, 38, 38);
+    cursor: default;
+    text-decoration: underline;
+}
+
+.bookPageInformationContainer button {
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 16px);
+    cursor: default;
+    outline: none;
+    background-color: white;
+    border: 1px solid rgb(0, 162, 255);
+}
+
+.bookPageInformationContainer button:hover {
+    background-color: rgb(0, 162, 255, 0.7);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 450px) {
+    .img {
+        display: none;
+    }
+
+    .bookContainer {
+        padding: 0;
+        padding-top: 20px;
+        min-width: 400px;
+    }
+
+    .mainContainer {
+        width: 350px;
+        padding: 0;
+    }
+
+    .bookInformation {
+        width: 330px;
+    }
+
+    .bookInformation p {
+        font-size: 10px;
+    }
+
+    .bookInformation button {
+        font-size: 12px;
+    }
+
+}

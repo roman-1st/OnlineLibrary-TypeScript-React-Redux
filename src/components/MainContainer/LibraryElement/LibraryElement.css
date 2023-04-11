@@ -1,0 +1,118 @@
+.LibraryBlock {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 15vw);
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.bookCard {
+    width:15vw;
+    border: 1px solid #51b6ff;
+    box-shadow: 3px 3px 10px rgb(206, 206, 206);
+    font-family: 'PT Serif', serif;
+}
+
+@media screen and (max-width: 1400px) {
+    .LibraryBlock {
+        display: grid;
+        grid-template-columns: repeat(4, 15vw);
+        justify-content: center;
+        gap: 10vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .LibraryBlock {
+        display: grid;
+        grid-template-columns: repeat(3, 15vw);
+        justify-content: center;
+        gap: 10vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .LibraryBlock{
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+        justify-content: center;
+    }
+    .bookCard {
+        width: 120px;
+    }
+}
+
+
+.bookCard img {
+    width: 10vw;
+    min-width: 55px;
+    max-width: 200px;
+    height: 12vw;
+    min-height: 100px;
+    max-height: 300px;
+
+    border: 1px solid black;;
+    margin: auto;
+    margin: 10px;
+
+}
+
+.categories {
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+    font-size: clamp( 10px, 1vw, 20px );
+    margin: 0 10px;
+
+}
+
+.bookCard h2 {
+    font-size: clamp( 10px, 1vw, 20px );
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    margin: 0 10px;
+}
+
+.authors {
+    font-size: clamp( 10px, 1vw, 20px );
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+
+    margin: 10px;
+    text-decoration: none;
+}
+
+.goToBook {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.goToBook:hover {
+    text-decoration: underline;
+    cursor: default;
+
+}
+
+.goToBook:active {
+    text-decoration: none;
+}
+

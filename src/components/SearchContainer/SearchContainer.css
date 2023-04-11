@@ -1,0 +1,77 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #c2c9e8; */
+    /* background-color: #efeeff; */
+    background-color: #b7d0ff;
+}
+
+.header div {
+    width: 800px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.header div input {
+    height: 40px;
+    width: 200px;
+    padding: 0;
+    padding-left: 5px;
+    /* background-color: #9ab2df; */
+    /* background-color: #00a2ff; */
+    border: 1px solid #00a2ff;
+
+    /* border: none; */
+    outline: none;
+}
+
+.header div select {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 1px solid #00a2ff;
+}
+
+.header div select:hover {
+    background-color: rgb(0, 162, 255, 0.7);
+    transition: 0.3s;
+}
+
+
+.header div button {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    background-color: white;
+    border: 1px solid rgb(0, 162, 255);
+}
+
+.header div button:hover {
+    background-color: rgb(0, 162, 255, 0.7);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1100px) {
+    .header div  {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header {
+        height: 200px;
+    }
+    .header div  {
+        width: 70vw;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header div select {
+        width: 150px;
+    }
+}
